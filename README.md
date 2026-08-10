@@ -67,7 +67,7 @@ Diretório: `aula-01/`
 
 Arquivo principal:
 
-- `hello.cbl` — exemplo mínimo com identificação, procedimento e `DISPLAY` de uma mensagem.
+- [aula-01/hello.cbl](aula-01/hello.cbl) — exemplo mínimo com identificação, procedimento e `DISPLAY` de uma mensagem.
 
 ### Aula 02
 
@@ -75,7 +75,7 @@ Diretório: `aula-02/`
 
 Arquivo principal:
 
-- `estrutura.cbl` — programa com `IDENTIFICATION DIVISION`, `ENVIRONMENT DIVISION`, `DATA DIVISION`, `WORKING-STORAGE SECTION`, `MOVE`, `DISPLAY` e `STOP RUN`.
+- [aula-02/estrutura.cbl](aula-02/estrutura.cbl) — programa com `IDENTIFICATION DIVISION`, `ENVIRONMENT DIVISION`, `DATA DIVISION`, `WORKING-STORAGE SECTION`, `MOVE`, `DISPLAY` e `STOP RUN`.
 
 ### Exercícios
 
@@ -83,8 +83,8 @@ Diretório: `exercicios/`
 
 Programas já implementados:
 
-- `ola-carolina.cbl` — primeiro programa com mensagens em sequência.
-- `aula-02-sistema.cbl` — exemplo de sistema bancário simples com cabeçalho e variáveis de texto.
+- [exercicios/ola-carolina.cbl](exercicios/ola-carolina.cbl) — primeiro programa com mensagens em sequência.
+- [exercicios/aula-02-sistema.cbl](exercicios/aula-02-sistema.cbl) — exemplo de sistema bancário simples com cabeçalho e variáveis de texto.
 
 ### Desafios
 
@@ -92,8 +92,8 @@ Diretório: `desafios/`
 
 Programas já implementados:
 
-- `desafio-01.cbl` — programa com saída de cadastro/estagiário em tela.
-- `desafio-02.cbl` — desafio com layout de banco, opções de operação e textos em `WORKING-STORAGE`.
+- [desafios/desafio-01.cbl](desafios/desafio-01.cbl) — programa com saída de cadastro/estagiário em tela.
+- [desafios/desafio-02.cbl](desafios/desafio-02.cbl) — desafio com layout de banco, opções de operação e textos em `WORKING-STORAGE`.
 
 ## Comandos básicos usados no curso
 
