@@ -54,10 +54,21 @@ curso-cobol/
 ├── aula-02/                # estrutura com DATA DIVISION e WORKING-STORAGE
 ├── exercicios/             # programas práticos propostos pelo curso
 ├── desafios/               # desafios com mini-sistemas e telas de saída
-├── docs/                   # diretório reservado para documentação adicional
+├── docs/                   # documentação explicativa dos conteúdos estudados
 ├── bin/                    # binários compilados gerados pelo GNU COBOL
 └── README.md               # documentação principal do projeto
 ```
+
+## Documentação de apoio
+
+Os documentos de apoio estão organizados na pasta [docs/](docs) e tratam dos conceitos já desenvolvidos no curso:
+
+- [docs/01-introducao-cobol.md](docs/01-introducao-cobol.md): visão geral da linguagem, divisões e comandos básicos.
+- [docs/02-variaveis-e-pic.md](docs/02-variaveis-e-pic.md): explicação de `PIC`, tipos numéricos e alfanuméricos.
+- [docs/03-procedure-division.md](docs/03-procedure-division.md): uso do `PROCEDURE DIVISION`, `MOVE`, `DISPLAY` e `STOP RUN`.
+- [docs/04-sistema-bancario.md](docs/04-sistema-bancario.md): estudo do layout do mini-sistema bancário.
+- [docs/05-desafios-e-exercicios.md](docs/05-desafios-e-exercicios.md): classificação e objetivos dos exemplos e desafios.
+- [docs/06-registros-e-layout.md](docs/06-registros-e-layout.md): registros de funcionário e produto, layout de tela e uso de `PIC` em estruturas.
 
 ## Conteúdo atual do curso
 
@@ -76,6 +87,15 @@ Diretório: `aula-02/`
 Arquivo principal:
 
 - [aula-02/estrutura.cbl](aula-02/estrutura.cbl) — programa com `IDENTIFICATION DIVISION`, `ENVIRONMENT DIVISION`, `DATA DIVISION`, `WORKING-STORAGE SECTION`, `MOVE`, `DISPLAY` e `STOP RUN`.
+
+### Aula 03
+
+Diretório: `exercicios/aula-03/`
+
+Programas principais:
+
+- [exercicios/aula-03-funcionario.cbl](exercicios/aula-03-funcionario.cbl) — exercício de cadastro com registro estruturado de funcionário.
+- [exercicios/aula-03/produto.cbl](exercicios/aula-03/produto.cbl) — exercício de registro de produto com campos de código, descrição, quantidade, preço e estoque.
 
 ### Exercícios
 
