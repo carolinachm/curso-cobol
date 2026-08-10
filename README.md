@@ -85,6 +85,8 @@ Programas já implementados:
 
 - [exercicios/ola-carolina.cbl](exercicios/ola-carolina.cbl) — primeiro programa com mensagens em sequência.
 - [exercicios/aula-02-sistema.cbl](exercicios/aula-02-sistema.cbl) — exemplo de sistema bancário simples com cabeçalho e variáveis de texto.
+- [exercicios/aula-03-funcionario.cbl](exercicios/aula-03-funcionario.cbl) — exemplo de cadastro com registro de funcionário contendo matrícula, nome, idade, cargo e salário.
+- [exercicios/aula-03/produto.cbl](exercicios/aula-03/produto.cbl) — exemplo de cadastro de produto com código, descrição, quantidade, preço e estoque.
 
 ### Desafios
 
@@ -111,17 +113,48 @@ PROCEDURE DIVISION.
     STOP RUN.
 ```
 
+## Conceitos novos estudados
+
+### Registros e agrupamento de dados
+
+O exercício de funcionário e o exemplo de produto introduziram o uso de estruturas de nível com registro:
+
+```cobol
+01 FUNCIONARIO.
+   05 MATRICULA PIC 9(5).
+   05 NOME      PIC X(30).
+   05 IDADE     PIC 99.
+   05 CARGO     PIC X(20).
+   05 SALARIO   PIC 9(7)V99.
+```
+
+Esse padrão permite agrupar vários campos em uma unidade lógica do programa.
+
+### Numerização com `PIC`
+
+Além de `PIC X(n)` para textos, o curso já trabalha com campos numéricos:
+
+- `PIC 99` para idade ou quantidade curta;
+- `PIC 9(5)` para códigos ou estoques;
+- `PIC 9(7)V99` para valores monetários com duas casas decimais.
+
+### Layout de saída com `DISPLAY`
+
+As telas dos programas usam linhas de separação e mensagens para sintetizar uma tela com layout de cadastro.
+
 ## Observações de estudo
 
 - `PROGRAM-ID` identifica o nome do programa executável.
 - `DATA DIVISION` define os dados usados no programa.
 - `WORKING-STORAGE SECTION` guarda variáveis de memória.
 - `PIC X(n)` representa uma área alfanumérica com tamanho `n`.
-- `MOVE` transfere texto de um literal para uma variável.
+- `PIC 9(n)` representa um campo numérico com `n` dígitos.
+- `PIC 9(n)V99` é um número com casas decimais implícitas.
+- `MOVE` transfere texto ou números para uma variável.
 - `DISPLAY` envia a informação para a saída padrão.
 - `STOP RUN` encerra a execução do programa.
 
 ## Estado atual
 
-O projeto contém programas em fase inicial de aprendizado, com foco em conceitos básicos de entrada e saída, variáveis e estruturas de programação COBOL. Os binários compilados são produzidos na pasta `bin/`.
+O projeto contém programas em fase inicial de aprendizado, com foco em conceitos básicos de entrada e saída, variáveis, registros de dados e estruturas de programação COBOL. Os binários compilados são produzidos na pasta `bin/`.
 
